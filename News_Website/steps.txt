@@ -1,0 +1,8 @@
+﻿step by steps processes to create and push repositories on github
+type "echo" to create a new repository"
+type "git init" to initialize a new git repository
+type "git add ." to stage all files for commit
+type "git commit -m 'Initial commit'" to commit the staged files
+type "git branch -M main" to rename the default branch to main
+type "git remote add origin https://github.com/Wanda-Tech/kenzo__news.git" to add the remote repository
+type "git push -u origin main" to push the changes to the remote repository
