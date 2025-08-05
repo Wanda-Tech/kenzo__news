@@ -12,9 +12,9 @@ a {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #000000;
   background-color: #1b6ec2;
-  border-color: #1861ac;
+  border-color: #ff0000;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {

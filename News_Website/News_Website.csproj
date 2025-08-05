@@ -1,9 +1,44 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\NewFolder\**" />
+    <Compile Remove="Views\Shared\NewFolder1\**" />
+    <Content Remove="Views\NewFolder\**" />
+    <Content Remove="Views\Shared\NewFolder1\**" />
+    <EmbeddedResource Remove="Views\NewFolder\**" />
+    <EmbeddedResource Remove="Views\Shared\NewFolder1\**" />
+    <None Remove="Views\NewFolder\**" />
+    <None Remove="Views\Shared\NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\context.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Site.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LessCompiler" Version="1.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mapper\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
 
 </Project>
