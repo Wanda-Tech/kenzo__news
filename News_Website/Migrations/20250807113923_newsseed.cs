@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace News_Website.Migrations
 {
     /// <inheritdoc />
-    public partial class initialCreate : Migration
+    public partial class newsseed : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
